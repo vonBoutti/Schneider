@@ -1,3 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    height: 60px;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+}
+
+
+.lista1{
+    background-color:black;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: auto;
+    height: 100%;
+    padding-inline-end: 5px;
+}  
+
+.logo {
+    width: auto;
+    position: absolute;
+}
+
+ul li{
+    display: inline-flex;
+    padding: 10px;
+}
+
+.item-lista1{
+    min-width: 100px;
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+    padding-inline: 5px;
+    font-family: 'Comfortaa';
+    transition: 0.5s;
+}
+
+
+.item-lista1:hover{
+    background-color: lightgray;
+    color: black;
+    padding-inline: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .titulobanner, .subtitulobanner {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+  
+  .titulobanner {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Comfortaa';
+  }
+  
+.subtitulobanner {
+    font-size: 18px;
+    display: flex;
+    margin-top: 100px;
+  }
+  
+.tabindex{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: center;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.textointroducao{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comfortaa';
+  margin-right: 100px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #93c47d;
+  border: solid #93c47d 1px;
+  border-radius: 3px;
+  width: 150px;
+  height: 50px;
+  font-family: 'Comfortaa';
+  font-size: 15px;
+}
+
+
 .slideshow{
     max-width: 800px;
     position: relative;
