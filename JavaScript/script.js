@@ -7,3 +7,26 @@ collapsibles.forEach((collapsible, index) => {
     collapsible.classList.toggle("active");
   });
 });
+
+// IMAGENS que aparecem ao rolar a pagina
+
+
+
+function showImagesOnScroll() {
+  const imageContainers = document.querySelectorAll(".image-container");
+  
+  imageContainers.forEach((container) => {
+    const rect = container.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    
+    if (rect.top <= windowHeight * 0.8) {
+      container.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", showImagesOnScroll);
+showImagesOnScroll(); // Exibe as imagens visíveis ao carregar a página
+
+
+
