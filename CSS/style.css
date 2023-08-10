@@ -200,6 +200,7 @@ hr{
 }
 
 .login{
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   background-color: lightgray;
