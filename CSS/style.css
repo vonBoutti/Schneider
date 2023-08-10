@@ -5,6 +5,10 @@ html, body {
   margin: 0;
 }
 
+body {
+  font-family: 'Comfortaa';
+}
+
 .menu {
     width: 100%;
     margin: auto;
@@ -25,6 +29,7 @@ html, body {
     margin: auto;
     height: 100%;
     padding-inline-end: 5px;
+    width: 100%;
 }  
 
 .logo {
@@ -42,7 +47,7 @@ ul li{
     color: white !important;
     text-decoration: none;
     text-align: center;
-    padding-inline: 5px;
+    padding-inline: 5px ;
     font-family: 'Comfortaa';
     transition: 0.5s;
 }
@@ -98,84 +103,151 @@ ul li{
 .tabindex{
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 50px;
   justify-content: center;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .textointroducao{
-  display: flex;
+  display: grid;
   flex-direction: column;
   font-family: 'Comfortaa';
   margin-right: 100px;
   font-size: 18px;
+  line-height: 30px;
+  grid-gap: 30px;
 }
 
 button {
   background-color: #93c47d;
   border: solid #93c47d 1px;
-  border-radius: 3px;
+  border-radius: 10px;
   width: 150px;
   height: 50px;
   font-family: 'Comfortaa';
   font-size: 15px;
 }
 
+.video {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
-.slideshow{
-    max-width: 800px;
-    position: relative;
-    margin: auto;
+.video iframe {
+width: 600px;
+height: 395px;
+}
+
+.beneficios{
+  background-color: #bfc56b;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
   }
 
-  .slides{
-    display: none;
+.blocosbeneficios{
+  display: flex;
+  flex-direction: row;
+  margin-left: 60px;
+}
+
+.bloco{
+  display: grid;
+  flex-direction: column;
+  padding: 30px 20px;
+  grid-gap: 15px 8px;
+  line-height: 30px;
+}
+
+.imgbeneficio{
+  width: 250px;
+  height: 212px;
+  margin-left: 15px;
+}
+
+hr{
+  width: 90%;
+  display: block;
+  margin-left: 80px;
+}
+
+.imglinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.imglink1{
+  display: grid;
+  grid-gap: 40px;
   }
 
-  .slide-img {
-    width: 440px;
-    height: 240px;
-  }
+.imglink{
+  margin-left: 40px;
+}
 
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+.login{
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+  width: 100%;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
 
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+.imglogin{
+  background-image: url(img/seguranca.png);
+  width: 250px;
+  height: 281px;
+  margin-left: 80px;
+}
 
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+.textlogin{
+  margin-left: 50px;
+  display: grid;
+  grid-gap: 15px 8px;
+  width: 60%;
+  margin-right: 80px;
+}
 
-  .dot-container {
-    text-align: center;
-  }
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #bfc56b;
+  margin-top: 80px;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
 
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+.imgfooter{
+  background-image: url(img/footer.png);
+  width: 256px;
+  height: 256px;
+  margin-left: 80px;
+}
 
-  .active {
-    background-color: #717171;
-  }
+.textfooter{
+  margin-left: 50px;
+  display: grid;
+  grid-gap: 15px 8px;
+  width: 60%;
+  margin-right: 80px;
+  color: white;
+}
+
