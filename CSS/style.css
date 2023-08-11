@@ -120,6 +120,13 @@ body {
     background-image:  url(img/bannerNiveisPontuacoes.png);
   }
 
+  #bannerd{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerd.jpg);
+  }
+  #bannerDesafios{
+    background-image:  url(img/bannerDesafios.png);
+  }
+
   .titulobanner, .subtitulobanner {
     position: absolute;
     top: 25%;
