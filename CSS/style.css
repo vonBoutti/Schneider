@@ -78,7 +78,7 @@ body {
     padding-bottom: 25px;
 }
 
-  .banner, .bannerp, .bannerPontosExtras{
+  .banner, .bannerp, .bannerPontosExtras, .banner2{
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,6 +89,10 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .banner2{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner2.png);
   }
 
   .banner{
@@ -404,4 +408,42 @@ span{
 
 a {
   color: black;
+}
+
+.image-container {
+  opacity: 0; /* Inicialmente, a imagem está oculta */
+  transition: opacity 0.5s; /* Efeito de transição suave */
+  margin: 20px;
+  width: 66px;
+  height: 66px;
+}
+
+.image-container.show {
+  opacity: 1; /* Mostra a imagem quando a classe "show" é adicionada */
+  width: 66px;
+  height: 66px;
+}
+
+.noticia{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.textnoticia{
+  display: grid;
+  width: 570px;
+  grid-gap: 30px 8px;
+  text-align: end;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.imagensODS{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
 }
