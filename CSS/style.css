@@ -78,7 +78,7 @@ body {
     padding-bottom: 25px;
 }
 
-  .banner, .bannerp, .bannerPontosExtras, .banner2, .banner3{
+  .banner, .bannerPontosExtras, .banner2, .banner3{
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,11 +103,11 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner.png);
   }
 
-  .bannerp{
+  #bannerp{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontuacoes.jpg);
   }
 
-  .bannerPontosExtras{
+  #bannerPontosExtras{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontosExtras.png);
   }
 
@@ -482,3 +482,83 @@ a {
   font-size: 15px;
   justify-content: space-around;
 }
+
+/* PONTUAÇOES ALINHAMENTO */
+
+.box1Pontuacoes, .box2Pontuacoes, .box3Pontuacoes, .box4Pontuacoes{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.texto{
+  display: grid;
+  flex-direction: column;
+  font-family: 'Comfortaa';
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  grid-gap: 30px;
+}
+ 
+/* banner Pontos extras*/
+.titulobannerPontosExtras, .subtitulobannerPontosExtras, .buttonPontosExtras {
+  position: relative;
+    top: 20%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulobannerPontosExtras {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Comfortaa';
+  height: max-content;
+}
+
+.subtitulobannerPontosExtras {
+  font-size: 18px;
+  display: flex;
+  height: 20%;
+}
+
+.buttonPontosExtras{
+  display: flex;
+  height: 28%;
+}
+
+/* ALINHAMENTO DESAFIOS*/
+
+.lista2Imagens ul, .lista1Imagens ul{
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  
+}
+
+li h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* TEXTOS */
+.boxD .texto h2{
+ text-align: center;
+}
+
+.boxD .texto p{
+  text-align: justify;
+}
+
