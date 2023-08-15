@@ -482,3 +482,63 @@ a {
   font-size: 15px;
   justify-content: space-around;
 }
+
+.posts{
+  margin-left: 10%;
+  padding: 10px;
+}
+
+.post-single{
+  display: flex;
+  background-color: white;
+}
+
+.post-sidebar{
+  padding: 8px;
+  background-color: rgb(245,245,245,245)
+}
+
+.post-content p > img{
+  width: 60px;
+  height: 60px;
+  border-radius: 0px;
+  display: inline;
+  padding-right: 10px;
+}
+
+.post-content img {
+   width: 100%;
+   display: block;
+}
+
+#tbinfo{
+  display:flex;
+  justify-content: center;
+  
+}
+.container{
+  margin-left: 55px;
+}
+.create-post{
+  margin-left: 10%;
+  padding: 10px;
+}
+img.tdcriar{
+  width: 200px;
+  height: 150px;
+}
+
+img.tdpremiar{
+  width: 200px;
+  height: 150px;
+  margin-left: 100px;
+}
+
+img.tdsalvar{
+  width: 200px;
+  height: 150px;
+  margin-right: 300px;
+}
+.inc{
+  margin-left: 25%;
+}
