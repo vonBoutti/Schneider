@@ -482,60 +482,148 @@ a {
   font-size: 15px;
   justify-content: space-around;
 }
-
-.posts{
-  margin-left: 10%;
-  padding: 10px;
+/* ---------perfil---------- */
+.distancia-teste{
+  height: 140px;
 }
 
-.post-single{
+.forum-perfil{
+  background-color: #3DCD58;
+  height: 480px;
+}
+
+.forum-sub{
   display: flex;
-  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
 }
 
-.post-sidebar{
-  padding: 8px;
-  background-color: rgb(245,245,245,245)
+.forum-perfil > h4 {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
 }
 
-.post-content p > img{
+.forum-perfil p {
+  text-align: center;
+}
+
+.img-perfil{
+  background-image: url(../CSS/img/perfil-challenge.png);
+  height: 325px;
+  width: 324px; 
+  margin-left: 5%;
+}
+
+.img-menu-perfil{
+  background-image: url(../CSS/img/menu-perfil-challenge.png);
+  height: 325px;
+  width: 499px;
+  margin-right: 5%;
+}
+/* ---------post---------- */
+.criar-post{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.perfil-post{
   width: 60px;
   height: 60px;
-  border-radius: 0px;
-  display: inline;
-  padding-right: 10px;
+  margin-top: 5%;
+}
+.react-comentario{
+  width: 170px;
+  height: 30px;
+  margin-top: 5%;
+  margin-left: 40%;
 }
 
-.post-content img {
-   width: 100%;
-   display: block;
+.escrever-post input {
+  border: none;
+  height: 30px;
+  width: 400px;
+  margin-left: 15px;
 }
 
-#tbinfo{
-  display:flex;
-  justify-content: center;
-  
+.botoes-post{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
 }
-.container{
-  margin-left: 55px;
+.btn-post{
+  background-color: #3DCD58;
 }
-.create-post{
-  margin-left: 10%;
-  padding: 10px;
+.btn-rasc{
+  background-color: #FFF;
+  color: #3DCD58;
 }
-img.tdcriar{
-  width: 200px;
-  height: 150px;
+.menu-timeline button{
+  background-color: #E5FFE6;
+  border: none;
+}
+.menu-timeline{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  margin-left: 15%;
 }
 
-img.tdpremiar{
-  width: 200px;
-  height: 150px;
-  margin-left: 100px;
+.timeline-forum{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 50px;
 }
 
-img.tdsalvar{
-  width: 200px;
-  height: 150px;
-  margin-right: 300px;
+.post{
+  word-wrap: break-word;
+  width: 750px;
+  margin-right: 150px;
+}
+.post p{
+  margin: 10px;
+  font-size: 14px;
+}
+.post input{
+  border: none;
+  margin-left: 15px;
+}
+
+.perfil-post-1{
+ background-image: url(../CSS/img/perfil-post-1.png);
+ height: 119px;
+ width: 749px;
+}
+
+.perfil-post-2{
+  background-image: url(../CSS/img/perfil-post-2.png);
+  height: 119px;
+  width: 749px;
+ }
+
+ .perfil-post-3{
+  background-image: url(../CSS/img/perfil-post-3.png);
+  height: 119px;
+  width: 749px;
+ }
+
+.img-post-1{
+  background-image: url(../CSS/img/img-post-1.png);
+  height: 250px;
+  width: 750px;
+}
+
+.img-post-3{
+  background-image: url(../CSS/img/img-post-3.png);
+  height: 320px;
+  width: 750px;
+}
+.like-coment{
+  display: flex;
+  justify-content: space-between;
+  color: #3DCD58;
 }
