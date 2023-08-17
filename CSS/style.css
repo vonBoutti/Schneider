@@ -31,15 +31,16 @@ body {
     width: 100%;
     margin: auto;
     align-items: center;
-    height: 60px;
+    height: 80px;
     z-index: 1;
     display: flex;
     position: fixed;
+    background-color:black;
+    padding-left: 20px;
 }
 
 
 .lista1{
-    background-color:black;
     text-align: end;
     display: inline-flex;
     align-items: center;
@@ -78,79 +79,105 @@ body {
     padding-bottom: 25px;
 }
 
-  .banner, .bannerp, .bannerPontosExtras, .banner2, .banner3{
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 450px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.banner, .banner2, .banner3, .bannerp, .bannerPontosExtras{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .banner2{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner2.png);
-  }
+.bigbanner, .bigbanner2 {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .banner3{
-    background-image: url(img/sobre.png);
-  }
+.banner-img1{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner.png);
+}
 
-  .banner{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner.png);
-  }
+.banner-img2{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner2.png);
+}
 
-  .bannerp{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontuacoes.jpg);
-  }
+.banner-img3 {
+  background-image: url(img/sobre.png);
+}
 
-  .bannerPontosExtras{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontosExtras.png);
-  }
+.banner2{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner2.png);
+}
 
-  #bannerHall{
-    background-image:  url(img/bannerHallPontuacao.png);
+.banner3{
+  background-image: url(img/sobre.png);
+}
 
-  }
+.banner{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner.png);
+}
 
-  #bannerNiveis{
-    background-image:  url(img/bannerNiveisPontuacoes.png);
-  }
+.bannerp{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontuacoes.jpg);
+}
 
-  #bannerd{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerd.jpg);
-  }
-  #bannerDesafios{
-    background-image:  url(img/bannerDesafios.png);
-  }
+.bannerPontosExtras{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontosExtras.png);
+}
 
-  .titulobanner, .subtitulobanner {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-family: 'Comfortaa';
-    display: flex;
-    width: 90%;
-    justify-content: center;
-  }
-  
-  .titulobanner {
-    font-weight: bold;
-    font-size: 30px;
-    font-family: 'Comfortaa';
-  }
+#bannerHall{
+  background-image:  url(img/bannerHallPontuacao.png);
+
+}
+
+#bannerNiveis{
+  background-image:  url(img/bannerNiveisPontuacoes.png);
+}
+
+#bannerd{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerd.jpg);
+}
+#bannerDesafios{
+  background-image:  url(img/bannerDesafios.png);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: 'Comfortaa';
+  display: block;
+  width: 100%;
+  padding: 0 60px;
+  justify-content: center;
+}
+
+.titulobanner {
+  width: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Comfortaa';
+}
   
 .subtitulobanner {
+    width: 100%;
     font-size: 18px;
     display: flex;
-    margin-top: 100px;
+    margin-top: 30px;
   }
   
 .tabindex{
@@ -198,10 +225,9 @@ height: 395px;
 .beneficios{
   background-color: #bfc56b;
   width: 100%;
-  height: 100px;
-  display: flex;
   margin-top: 100px;
   margin-bottom: 50px;
+  padding: 50px 0 50px 0;
   align-items: center;
 }
 
@@ -259,7 +285,7 @@ hr{
   flex-direction: row;
   background-color: lightgray;
   width: 100%;
-  height: 350px;
+  padding: 200px 0 200px 0;
   justify-content: center;
   align-items: center;
 }
@@ -283,9 +309,8 @@ footer{
   display: flex;
   flex-direction: row;
   background-color: #bfc56b;
-  margin-top: 80px;
   width: 100%;
-  height: 300px;
+  padding: 200px 0 200px 0;
   justify-content: center;
   align-items: center;
 }
@@ -308,10 +333,10 @@ footer{
 
 .collapsible {
   cursor: pointer;
-  padding: 10px;
+  padding: 60px;
   background-color: #bfc56b;
+  color: #fff;
   font-weight: 800;
-  height: 100px;
   display: flex;
   align-items: center;
 }
@@ -319,7 +344,7 @@ footer{
 .collapsible:after {
   content: '\25B6'; /* Unicode para a seta para a direita */
   position: absolute;
-  right: 10px;
+  right: 100px;
   transform: rotate(0deg);
   transition: transform 0.3s;
 }
@@ -328,13 +353,18 @@ footer{
 .content {
   display: none;
   line-height: 30px;
-  padding: 10px;
+  padding: 0 50px 50px 50px;
   background-color: #bfc56b;
+  color: #fff;
   width: 100%;
 }
 
 .content.active {
   display: block;
+}
+
+.content.active a {
+  color: #fff;
 }
 
 .active.collapsible:after {
@@ -351,10 +381,7 @@ footer{
 }
 
 .imgintroducao{
-  background-image: url(../CSS/img/incentivo.png);
-  width: 540px;
-  height: 540px;
-  display: flex;
+  margin: 150px 0;
 }
 
 .textintroducao{
@@ -396,12 +423,10 @@ span{
 .dicasONU{
   display: flex;
   flex-direction: row;
-  margin-top: 70px;
   background-color: lightgray;
   width: 100%;
-  height: 300px;
   justify-content: center;
-  padding: 50px;
+  padding: 200px 50px;
   align-items: center;
 }
 
