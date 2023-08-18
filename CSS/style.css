@@ -818,6 +818,7 @@ li h3{
   flex-direction: row;
   justify-content: center;
   margin-top: 40px;
+  align-items: center;
 }
 
 .premio3{
@@ -830,7 +831,8 @@ li h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .top123{
@@ -888,7 +890,6 @@ li h3{
 }
 
 .grid-item {
-  padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -896,6 +897,7 @@ li h3{
   height: 90px;
   background-color: #d9ffa9;
   border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 .fotoperfil2{
@@ -921,62 +923,4 @@ li h3{
 
 .column-2 {
   justify-self: start;
-}
-
-/* DESAFIOS */
-/* TEXTOS */
-.boxDesafios{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.boxDesafios .texto{
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.boxDesafios img{
-  width: 5%;
-}
-
-#textoW h2 {
-  color: black; !important
-}
-
-#textoW h3 {
-  color: black; !important
-}
-
-#textoW h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* BACKGROUND*/
-#green{
-  display: flex;
-  background-color: #3DCD58;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.imgDesafio1, .imgDesafio2, .imgDesafio3, .imgDesafio4 {
-  background-color: #3DCD58;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
-
-/*IMAGENS POSTS*/
-.img-post-3-desafios{
-  background-image: url(../CSS/img/img-post-3-desafios.jpg);
-  height: 250px;
-  width: 750px;
 }
