@@ -151,7 +151,7 @@ body {
 #bannerd{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerd.jpg);
 }
-#bannerDesafios{
+#bannerSobreDesafios{
   background-image:  url(img/bannerDesafios.png);
 }
 
@@ -566,7 +566,7 @@ a {
   height: 28%;
 }
 
-/* ALINHAMENTO DESAFIOS*/
+/* ALINHAMENTO SobreDesafios*/
 
 .lista2Imagens ul, .lista1Imagens ul{
   display: flex;
@@ -921,4 +921,62 @@ li h3{
 
 .column-2 {
   justify-self: start;
+}
+
+/* DESAFIOS */
+/* TEXTOS */
+.boxDesafios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxDesafios .texto{
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxDesafios img{
+  width: 5%;
+}
+
+#textoW h2 {
+  color: black; !important
+}
+
+#textoW h3 {
+  color: black; !important
+}
+
+#textoW h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* BACKGROUND*/
+#green{
+  display: flex;
+  background-color: #3DCD58;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imgDesafio1, .imgDesafio2, .imgDesafio3, .imgDesafio4 {
+  background-color: #3DCD58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/*IMAGENS POSTS*/
+.img-post-3-desafios{
+  background-image: url(../CSS/img/img-post-3-desafios.jpg);
+  height: 250px;
+  width: 750px;
 }
