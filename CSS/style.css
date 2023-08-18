@@ -750,8 +750,8 @@ li h3{
   justify-content: center;
   text-align: center;
   height: 300px;  
-  width: 1200px;
   margin-left: 70px;
+  align-items: center;
 }
 
 .button1{
@@ -759,6 +759,7 @@ li h3{
   text-decoration: none;
   width: 1200px;
   margin-top: 30px;
+  justify-content: center;
 }
 
 .mensagem-confirmacao {
@@ -772,7 +773,7 @@ li h3{
   font-weight: 800;
   display: flex;
   align-items: center;
-  width: 100%;
+
 }
 
 .collapsible2:after {
@@ -781,7 +782,7 @@ li h3{
   right:initial;
   transform: rotate(0deg);
   transition: transform 0.3s;
-  width: 50%;
+
 }
 
 
@@ -789,7 +790,6 @@ li h3{
   display: none;
   line-height: 30px;
   padding: 0 50px 50px 50px;
-  width: 100%;
 }
 
 .content2.active {
@@ -799,7 +799,6 @@ li h3{
 .premiospt1{
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: center;
 }
 
@@ -815,14 +814,111 @@ li h3{
 }
 
 .premiospt2{
-  width: 100%;
   display: flex;
-  margin-top: 50px;
-  margin-left: 65px;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .premio3{
   display: flex;
   width: 45%;
   flex-direction: column;
+}
+
+.ranking{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.top123{
+  background-color: #3DCD58;
+  display: grid;
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.top1{
+  display: flex;
+  flex-direction: row;
+  padding-inline: 20px ;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.perfil1{
+  display: flex;
+  flex-direction: row;
+  background-color: #d9ffa9;
+  border-radius: 30px;
+  width: 541px;
+  height: 111px;
+  margin-left: 50px;
+}
+
+.fotoperfil{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  font-weight: bold;
+  width: 270px;
+}
+
+.pontostrofeu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 269px;
+  justify-content: end;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  background-color: #3DCD58;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 445px;
+  height: 90px;
+  background-color: #d9ffa9;
+  border-radius: 30px;
+}
+
+.fotoperfil2{
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: start;
+  font-weight: bold;
+  width: 222px;
+}
+
+.pontostrofeu2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 221px;
+  justify-content: end;
+}
+
+.column-1 {
+  justify-self: end;
+}
+
+.column-2 {
+  justify-self: start;
 }
