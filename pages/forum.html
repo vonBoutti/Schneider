@@ -54,12 +54,14 @@
 
             <div class="escrever-post">
                 <img class="perfil-post" src="../CSS/img/perfil-challenge.png" alt="">
-                <input type="text" name="" id="" placeholder="Qual seu pensamento sustentavel de hoje?">
+                <input type="text" id="post-input" placeholder="Qual seu pensamento sustentável de hoje?">
+                <div class="mensagem-confirmacao" id="confirmacao"></div> 
             </div>
             <div class="botoes-post">
-                <button class="btn-post">Postar</button>
-                <button class="btn-rasc">Rascunho</button>
+                <button class="btn-post" onclick="postar(), limparCampo()">Postar</button>
+                <button class="btn-rasc" onclick="limparCampo()">Rascunho</button>
             </div>
+        
 
         </div>
             
@@ -75,63 +77,68 @@
 
             <div class="timelime-posts">
 
-                <div class="post">
-                    
+    
+                <div class="post" id="post1">
                     <div class="perfil-post-1"></div>
                     <p> 🌱 Colhi tomates fresquinhos da minha própria horta hoje! Cultivar alimentos em casa não só é gratificante, como também reduz a pegada de carbono ao evitar transporte de longa distância. </p>
                     <div class="img-post-1"></div>
                     <div class="like-coment">
                         <p>78 Curtidas</p>
-                        <p>40 Comentários</p>
+                        <p class="comentarios">40 Comentários</p>
                     </div>  
                     <div class="post-comentario">
                         <img class="perfil-post" src="../CSS/img/perfil-challenge.png" alt="">
-                        <input type="text" name="" id="" placeholder="Comente!">
+                        <div class="comentario">
+                            <input type="text" class="post-input" placeholder="Comente!" onkeydown="enviarComentario(event, 'confirmacaoComentario1', 'comentarios1')">
+                            <div class="mensagem-confirmacao" id="confirmacaoComentario1"></div> 
+                        </div>
                         <img class="react-comentario" src="../CSS/img/reacoes-comentario.png" alt="">
                     </div>
-
                 </div>
-
+                <hr>
                 <br>
-
-                <div class="post">
-                    
+            
+                <div class="post" id="post2">
                     <div class="perfil-post-2"></div>
                     <p> tô em busca de maneiras criativas de tornar minha rotina mais verde. alguém aqui já experimentou reutilizar materiais para fazer artesanato? </p>
                     <div class="like-coment">
                         <p>17 Curtidas</p>
-                        <p>59 Comentários</p>
+                        <p class="comentarios">59 Comentários</p>
                     </div>  
                     <div class="post-comentario">
                         <img class="perfil-post" src="../CSS/img/perfil-challenge.png" alt="">
-                        <input type="text" name="" id="" placeholder="Comente!">
+                        <div class="comentario">
+                            <input type="text" class="post-input" placeholder="Comente!" onkeydown="enviarComentario(event, 'confirmacaoComentario2', 'comentarios2')">
+                            <div class="mensagem-confirmacao" id="confirmacaoComentario2"></div> 
+                        </div>
                         <img class="react-comentario" src="../CSS/img/reacoes-comentario.png" alt="">
                     </div>
-
                 </div>
-
+                <hr>
                 <br>
-
-                <div class="post">
-                    
+            
+                <div class="post" id="post3">
                     <div class="perfil-post-3"></div>
-                    <p>Hoje eu ensinei minhas netinhas a plantarem flores e ervas em vasinhos reutilizaveis. Fofinhas da vovó!!! ❤️ </p>
+                    <p>Hoje eu ensinei minhas netinhas a plantarem flores e ervas em vasinhos reutilizáveis. Fofinhas da vovó!!! ❤️ </p>
                     <div class="img-post-3"></div>
                     <div class="like-coment">
                         <p>457 Curtidas</p>
-                        <p>93 Comentários</p>
+                        <p class="comentarios">93 Comentários</p>
                     </div>  
                     <div class="post-comentario">
                         <img class="perfil-post" src="../CSS/img/perfil-challenge.png" alt="">
-                        <input type="text" name="" id="" placeholder="Comente!">
+                        <div class="comentario">
+                            <input type="text" class="post-input" placeholder="Comente!" onkeydown="enviarComentario(event, 'confirmacaoComentario3', 'comentarios3')">
+                            <div class="mensagem-confirmacao" id="confirmacaoComentario3"></div> 
+                        </div>
                         <img class="react-comentario" src="../CSS/img/reacoes-comentario.png" alt="">
                     </div>
-
                 </div>
-
+<hr>
             </div>
-
             
+
+            <script src="../JavaScript/script.js"></script>
             
         </div>
 

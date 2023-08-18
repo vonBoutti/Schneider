@@ -115,6 +115,10 @@ body {
   background-image: url(img/sobre.png);
 }
 
+.banner-img4 {
+  background-image: url(img/hall.png);
+}
+
 .banner2{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner2.png);
 }
@@ -201,8 +205,8 @@ body {
 }
 
 button {
-  background-color: #93c47d;
-  border: solid #93c47d 1px;
+  background-color: #3dcd58;
+  border: solid #3dcd58 1px;
   border-radius: 10px;
   width: 150px;
   height: 50px;
@@ -223,7 +227,7 @@ height: 395px;
 }
 
 .beneficios{
-  background-color: #bfc56b;
+  background-color: #3dcd58;
   width: 100%;
   margin-top: 100px;
   margin-bottom: 50px;
@@ -308,7 +312,7 @@ hr{
 footer{
   display: flex;
   flex-direction: row;
-  background-color: #bfc56b;
+  background-color: #3dcd58;
   width: 100%;
   padding: 200px 0 200px 0;
   justify-content: center;
@@ -334,7 +338,7 @@ footer{
 .collapsible {
   cursor: pointer;
   padding: 60px;
-  background-color: #bfc56b;
+  background-color: #3dcd58;
   color: #fff;
   font-weight: 800;
   display: flex;
@@ -354,7 +358,7 @@ footer{
   display: none;
   line-height: 30px;
   padding: 0 50px 50px 50px;
-  background-color: #bfc56b;
+  background-color: #3dcd58;
   color: #fff;
   width: 100%;
 }
@@ -507,6 +511,86 @@ a {
   font-size: 15px;
   justify-content: space-around;
 }
+/* PONTUAÇOES ALINHAMENTO */
+
+.box1Pontuacoes, .box2Pontuacoes, .box3Pontuacoes, .box4Pontuacoes{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.texto{
+  display: grid;
+  flex-direction: column;
+  font-family: 'Comfortaa';
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  grid-gap: 30px;
+}
+
+/* banner Pontos extras*/
+.titulobannerPontosExtras, .subtitulobannerPontosExtras, .buttonPontosExtras {
+  position: relative;
+    top: 20%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulobannerPontosExtras {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Comfortaa';
+  height: max-content;
+}
+
+.subtitulobannerPontosExtras {
+  font-size: 18px;
+  display: flex;
+  height: 20%;
+}
+
+.buttonPontosExtras{
+  display: flex;
+  height: 28%;
+}
+
+/* ALINHAMENTO DESAFIOS*/
+
+.lista2Imagens ul, .lista1Imagens ul{
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+
+}
+
+li h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* TEXTOS */
+.boxD .texto h2{
+ text-align: center;
+}
+
+.boxD .texto p{
+  text-align: justify;
+}
+
+
 /* ---------perfil---------- */
 .distancia-teste{
   height: 140px;
@@ -616,6 +700,13 @@ a {
 .post input{
   border: none;
   margin-left: 15px;
+  width: 300px;
+}
+
+.post-comentario{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .perfil-post-1{
@@ -651,4 +742,87 @@ a {
   display: flex;
   justify-content: space-between;
   color: #3DCD58;
+}
+
+.introducaopont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 300px;  
+  width: 1200px;
+  margin-left: 70px;
+}
+
+.button1{
+  background-color: #3dcd58;
+  text-decoration: none;
+  width: 1200px;
+  margin-top: 30px;
+}
+
+.mensagem-confirmacao {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.collapsible2 {
+  cursor: pointer;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.collapsible2:after {
+  content: '\25B6'; /* Unicode para a seta para a direita */
+  position: absolute;
+  right:initial;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+  width: 50%;
+}
+
+
+.content2{
+  display: none;
+  line-height: 30px;
+  padding: 0 50px 50px 50px;
+  width: 100%;
+}
+
+.content2.active {
+  display: block;
+}
+
+.premiospt1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.premio1{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+}
+.premio2{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+}
+
+.premiospt2{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 65px;
+}
+
+.premio3{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
 }
