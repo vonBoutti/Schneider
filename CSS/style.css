@@ -977,14 +977,16 @@ li h3{
   justify-self: start;
 }
 
-<<<<<<< HEAD
 /* DESAFIOS */
 /* TEXTOS */
 .boxDesafios{
   display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
+
 .boxDesafios .texto{
   text-align: center;
   color: white;
@@ -1000,6 +1002,7 @@ li h3{
 }
 
 #textoW h2 {
+  text-align: center;
   color: black; !important
 }
 
@@ -1030,18 +1033,9 @@ li h3{
 }
 
 /*IMAGENS POSTS*/
-.img-post-3-desafios{
-  background-image: url(../CSS/img/img-post-3-desafios.jpg);
-  height: 250px;
+.img-post-3-desafios img, .img-post-1-desafios img {
+  height: 500px;
   width: 750px;
-}
-=======
-.perfil2{
-  display: flex;
-  background-color: #3DCD58;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 .postD{
