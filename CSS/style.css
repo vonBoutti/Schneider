@@ -131,21 +131,23 @@ body {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner.png);
 }
 
-.bannerp{
+#bannerp{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontuacoes.jpg);
 }
 
-.bannerPontosExtras{
+#bannerPontosExtras{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerPontosExtras.png);
+  background-position-y: 13%;
 }
 
 #bannerHall{
   background-image:  url(img/bannerHallPontuacao.png);
-
+  background-position: center;
 }
 
 #bannerNiveis{
   background-image:  url(img/bannerNiveisPontuacoes.png);
+  background-position: center;
 }
 
 #bannerd{
@@ -187,6 +189,8 @@ body {
     font-size: 18px;
     display: flex;
     margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
   }
   
 .tabindex{
@@ -568,18 +572,26 @@ a {
 }
 
 
-/* PONTUAÇOES ALINHAMENTO */
+/* SOBRE PONTUAÇOES ALINHAMENTO */
 
-.box1Pontuacoes, .box2Pontuacoes, .box3Pontuacoes, .box4Pontuacoes{
+.boxP{
   display: flex;
   flex-direction: row;
   margin-top: 50px;
   justify-content: center;
   margin-left: 80px;
   margin-right: 80px;
+  align-items: center;
 }
 
-.texto{
+.boxP #carouselExample{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.boxP .texto{
   display: grid;
   flex-direction: column;
   font-family: 'Comfortaa';
@@ -590,6 +602,17 @@ a {
   grid-gap: 30px;
 }
 
+.boxP .texto h2{
+  color: #3DCD58;
+}
+
+.boxP  #center{
+  text-align: center;
+}
+
+.boxP #right{
+  text-align: end;
+}
 /* banner Pontos extras*/
 .titulobannerPontosExtras, .subtitulobannerPontosExtras, .buttonPontosExtras {
   position: relative;
