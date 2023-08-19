@@ -1071,3 +1071,101 @@ li h3{
   margin: 0;
   height: 100%;
 }
+
+/* ARRUMANDO */
+.perfil2{
+  display: flex;
+  background-color: #3DCD58;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadosperfil{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.nomenivel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.dado{
+  background-color: #d9ffa9;
+  border-radius: 30px;
+  padding: 10px;
+  width: 500px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.progressos{
+  background-color: #3DCD58;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1{
+  display: grid;
+  text-align: center;
+  margin-top: 30px;
+  gap: 30px;
+  font-weight: bolder;
+}
+
+/*ESPERANÇA*/
+
+.perfil2{
+  display: flex;
+  background-color: #3DCD58;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadosperfil{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.nomenivel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.dado{
+  background-color: #d9ffa9;
+  border-radius: 30px;
+  padding: 10px;
+  width: 500px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.progressos{
+  display: flex;
+  flex-direction: column;
+  background-color: #3DCD58;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1{
+  display: grid;
+  text-align: center;
+  margin-top: 30px;
+  gap: 30px;
+  font-weight: bolder;
+}
+
