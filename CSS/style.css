@@ -646,8 +646,20 @@ a {
   height: 28%;
 }
 
-/* ALINHAMENTO DESAFIOS*/
-
+/* ALINHAMENTO  SOBRE DESAFIOS*/
+.boxD{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 50px;
+}
+.boxD ul li .listaSD{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
 .lista2Imagens ul, .lista1Imagens ul{
   display: flex;
   list-style-type: none;
