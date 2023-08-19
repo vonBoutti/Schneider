@@ -151,7 +151,7 @@ body {
 #bannerd{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bannerd.jpg);
 }
-#bannerSobreDesafios{
+#bannerDesafios{
   background-image:  url(img/bannerDesafios.png);
 }
 
@@ -495,22 +495,71 @@ a {
   margin-top: 50px;
 }
 
-.avatares1{
+.avatares{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.avatar {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  background-color: #3DCD58;
 }
 
-.avatartext{
+.avatares1 {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  font-size: 15px;
-  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-right: 20px;
+  position: relative;
 }
+
+.avatares1 p{
+  margin-top: 10px;
+}
+
+.avatares1 img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+
+.avatares1 h3{
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  text-align: start;
+  width: 100%;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.avatares1 img.hover-shadow {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.avatares1 img.hover-shadow:hover {
+  transform: scale(1.05);
+  border-radius: 30px;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.sobreprojeto{
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+
 /* PONTUAÇOES ALINHAMENTO */
 
 .box1Pontuacoes, .box2Pontuacoes, .box3Pontuacoes, .box4Pontuacoes{
@@ -566,7 +615,7 @@ a {
   height: 28%;
 }
 
-/* ALINHAMENTO SobreDesafios*/
+/* ALINHAMENTO DESAFIOS*/
 
 .lista2Imagens ul, .lista1Imagens ul{
   display: flex;
@@ -925,65 +974,6 @@ li h3{
   justify-self: start;
 }
 
-<<<<<<< HEAD
-/* DESAFIOS */
-/* TEXTOS */
-.boxDesafios{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.boxDesafios .texto{
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.boxDesafios img{
-  width: 5%;
-}
-
-#textoW h2 {
-  color: black; !important
-}
-
-#textoW h3 {
-  color: black; !important
-}
-
-#textoW h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* BACKGROUND*/
-#green{
-  display: flex;
-  background-color: #3DCD58;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.imgDesafio1, .imgDesafio2, .imgDesafio3, .imgDesafio4 {
-  background-color: #3DCD58;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
-
-/*IMAGENS POSTS*/
-.img-post-3-desafios{
-  background-image: url(../CSS/img/img-post-3-desafios.jpg);
-  height: 250px;
-  width: 750px;
-}
-=======
 .perfil2{
   display: flex;
   background-color: #3DCD58;
@@ -1030,62 +1020,4 @@ li h3{
   margin-top: 30px;
   gap: 30px;
   font-weight: bolder;
-}
->>>>>>> 637466ea8631c4bbc63fa57f357bfc232a6fc7f7
-+/* DESAFIOS */
-/* TEXTOS */
-.boxDesafios{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.boxDesafios .texto{
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.boxDesafios img{
-  width: 5%;
-}
-
-#textoW h2 {
-  color: black; !important
-}
-
-#textoW h3 {
-  color: black; !important
-}
-
-#textoW h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* BACKGROUND*/
-#green{
-  display: flex;
-  background-color: #3DCD58;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.imgDesafio1, .imgDesafio2, .imgDesafio3, .imgDesafio4 {
-  background-color: #3DCD58;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
-
-/*IMAGENS POSTS*/
-.img-post-3-desafios{
-  background-image: url(../CSS/img/img-post-3-desafios.jpg);
-  height: 250px;
-  width: 750px;
 }
