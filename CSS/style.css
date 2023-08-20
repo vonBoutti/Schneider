@@ -162,6 +162,10 @@ body {
   background-position-y: -370px;
 }
 
+#bannerUniaoSustentavel{
+  background-image:  url(img/bannerUniaoSustentavel.jpg);
+  background-position: center;
+}
 .banner-text {
   position: absolute;
   top: 50%;
@@ -669,8 +673,12 @@ a {
   align-items: flex-start;
 
 }
-.listaSD img{
-  width: 250px;
+.listaSD .i i{
+  font-size: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115px;
 }
 
 .material-symbols-outlined {
@@ -685,7 +693,7 @@ a {
 
 
 .listaSD h3{
-  margin-top: 5px;
+  margin-top: 25px;
   margin-bottom: 5px;
   width: 250px;
     text-align: center;
