@@ -27,7 +27,7 @@ function showImagesOnScroll() {
 }
 
 window.addEventListener("scroll", showImagesOnScroll);
-showImagesOnScroll(); // Exibe as imagens visíveis ao carregar a página
+showImagesOnScroll(); 
 
 
 // BOTÃO DE POSTAR COM FUNÇÃO ON CLICK
@@ -35,19 +35,18 @@ function postar() {
   var confirmacaoElement = document.getElementById("confirmacao");
   var inputElement = document.getElementById("post-input");
   
-  // Coloque aqui o código para enviar o post
 
   confirmacaoElement.innerHTML = "Post enviado com sucesso!";
   confirmacaoElement.style.color = "green";
 
   setTimeout(function () {
-      confirmacaoElement.innerHTML = ""; // Limpar a mensagem após alguns segundos
-  }, 3000); // Limpar após 3 segundos
+      confirmacaoElement.innerHTML = ""; 
+  }, 3000); 
 }
 
 function limparCampo() {
   var inputElement = document.getElementById("post-input");
-  inputElement.value = ""; // Limpar o valor do campo
+  inputElement.value = ""; 
 }
 
 // comentarios
@@ -58,16 +57,14 @@ function enviarComentario(event, confirmacaoId, comentariosId) {
       var confirmacaoComentarioElement = document.getElementById(confirmacaoId);
       var comentarioInputElement = event.target;
 
-      // Coloque aqui o código para enviar o comentário
-
       confirmacaoComentarioElement.innerHTML = "Comentário enviado com sucesso!";
       confirmacaoComentarioElement.style.color = "green";
 
       setTimeout(function () {
-          confirmacaoComentarioElement.innerHTML = ""; // Limpar a mensagem após alguns segundos
-      }, 3000); // Limpar após 3 segundos
+          confirmacaoComentarioElement.innerHTML = ""; 
+      }, 3000); 
 
-      comentarioInputElement.value = ""; // Limpar o campo de comentário
+      comentarioInputElement.value = ""; 
 
     }
 }
@@ -92,5 +89,21 @@ function checkVisibility() {
 window.addEventListener('scroll', checkVisibility);
 window.addEventListener('resize', checkVisibility);
 
-// Chame a função uma vez para verificar a visibilidade inicial
 checkVisibility();
+
+//esconder a senha 
+
+function togglePasswordVisibility(inputId, buttonId) {
+  const passwordInput = document.getElementById(inputId);
+  const toggleButton = document.getElementById(buttonId);
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleButton.textContent = "Esconder";
+  } else {
+    passwordInput.type = "password";
+    toggleButton.textContent = "Mostrar";
+  }
+}
+
+

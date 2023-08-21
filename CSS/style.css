@@ -1401,74 +1401,86 @@ a {
 }
 /* ________________________________________________________________ */
 
-.container-cad{
+.container-cad {
   background-color: #3dcd58;
   display: flex;
   justify-content: space-around;
 }
-.espaco-cad{
+
+.espaco-cad {
   background-color: #fff;
   height: 80px;
 }
 
-.img-btn{
+.img-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
   margin-top: 30px;
 }
-.btn-cad{
+
+.btn-cad {
   margin-left: 20px;
-  color: #FFF;
+  color: #fff;
   background-color: #8BCF6E;
   margin-top: 25px;
   margin-left: 155px;
 }
 
-.img-cad{
+.img-cad {
   width: 493px;
   height: 351px;
 }
 
-.form-cad{
+.form-cad {
   color: #fff;
   margin-right: 80px;
   margin-top: 80px;
 }
-.form-cad input{
+
+.form-cad input {
   background-color: #8BCF6E;
-  border: none; 
+  border: none;
   border-radius: 30px;
   width: 300px;
-  color: #fff ;
+  color: #fff;
 }
+
 .form-check-cad input {
   width: 15px;
   grid-gap: 10px;
 }
 
-.container-log{
+.input-group-text{
+  background-color: #2eb947;
+  border: none;
+  color: white;
+}
+
+.container-log {
   display: flex;
   justify-content: space-around;
   background-color: #3DCD58;
 }
 
-.form-log{
+.form-log {
   background-color: #9CEF78;
   border-radius: 40px;
   height: 350px;
   width: 300px;
   margin-top: 100px;
 }
-.log-div{
-  margin:17%;
-  grid-gap:20px;
-  color: #fff ;
+
+.log-div {
+  margin: 17%;
+  grid-gap: 20px;
+  color: #fff;
 }
-.form-log input{
+
+.form-log input {
   background-color: #8BCF6E;
-  border: none; 
+  border: none;
   border-radius: 30px;
   width: 200px;
   display: flex;
@@ -1476,29 +1488,29 @@ a {
   color: #fff;
 }
 
-.form-check-log input{
+.form-check-log input {
   width: 15px;
   display: flex;
   margin-top: 10px;
-  font-size: 15px;  
+  font-size: 15px;
 }
 
-.espaco-log{
+.espaco-log {
   background-color: #3dcd58;
   height: 80px;
 }
 
-.btn-log{
+.btn-log {
   color: #fff;
   margin-left: 75px;
 }
 
-.cad-p{
+.cad-p {
   color: #fff;
   font-size: 15px;
   margin-left: 28px;
 }
 
-.cad-a{
+.cad-a {
   color: #FFF;
 }
