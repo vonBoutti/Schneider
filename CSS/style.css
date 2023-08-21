@@ -1259,4 +1259,106 @@ a {
   gap: 30px;
   font-weight: bolder;
 }
+/* ________________________________________________________________ */
 
+.container-cad{
+  background-color: #3dcd58;
+  display: flex;
+  justify-content: space-around;
+}
+.espaco-cad{
+  background-color: #fff;
+  height: 80px;
+}
+
+.img-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.btn-cad{
+  margin-left: 20px;
+  color: #FFF;
+  background-color: #8BCF6E;
+  margin-top: 25px;
+  margin-left: 155px;
+}
+
+.img-cad{
+  width: 493px;
+  height: 351px;
+}
+
+.form-cad{
+  color: #fff;
+  margin-right: 80px;
+  margin-top: 80px;
+}
+.form-cad input{
+  background-color: #8BCF6E;
+  border: none; 
+  border-radius: 30px;
+  width: 300px;
+  color: #fff ;
+}
+.form-check-cad input {
+  width: 15px;
+  grid-gap: 10px;
+}
+
+.container-log{
+  display: flex;
+  justify-content: space-around;
+  background-color: #3DCD58;
+}
+
+.form-log{
+  background-color: #9CEF78;
+  border-radius: 40px;
+  height: 350px;
+  width: 300px;
+  margin-top: 100px;
+}
+.log-div{
+  margin:17%;
+  grid-gap:20px;
+  color: #fff ;
+}
+.form-log input{
+  background-color: #8BCF6E;
+  border: none; 
+  border-radius: 30px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.form-check-log input{
+  width: 15px;
+  display: flex;
+  margin-top: 10px;
+  font-size: 15px;  
+}
+
+.espaco-log{
+  background-color: #3dcd58;
+  height: 80px;
+}
+
+.btn-log{
+  color: #fff;
+  margin-left: 75px;
+}
+
+.cad-p{
+  color: #fff;
+  font-size: 15px;
+  margin-left: 28px;
+}
+
+.cad-a{
+  color: #FFF;
+}
