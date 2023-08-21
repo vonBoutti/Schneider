@@ -76,3 +76,21 @@ function toggleRecolhivel(elementId) {
   var recolhivelElement = document.getElementById(elementId);
   recolhivelElement.style.maxHeight = recolhivelElement.style.maxHeight ? null : recolhivelElement.scrollHeight + "px";
 }
+
+//APARECER OS ELEMENTOS NA PAGINA AO SCROLLAR
+const elements = document.querySelectorAll('.hidden');
+
+function checkVisibility() {
+  elements.forEach(element => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top <= window.innerHeight - 50) {
+      element.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('resize', checkVisibility);
+
+// Chame a função uma vez para verificar a visibilidade inicial
+checkVisibility();

@@ -1115,12 +1115,142 @@ a {
   flex-direction: column;
 }
 
-.imgDesafio1, .imgDesafio2, .imgDesafio3, .imgDesafio4 {
-  background-color: #3DCD58;
+
+.Desafio1{
   display: flex;
+  flex-direction: column;
+  background-color: #3DCD58;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+}
+
+.row1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 205px;
+  width: 750px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.row1 p{
+  background-color: #c1ff72;
+  border-radius: 30px;
+  display: flex;
+  width: fit-content;
+  height: 105px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sobreodesafio{
+  display: grid;
+  gap: 15px;
+  margin-left: 20px;
+  color: #2c9248;
+}
+.sobreodesafio h4{
+  color: white;
+}
+
+.row2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;  
+  width: 750px;
+  margin-top: 10px;
+}
+
+.End{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2c9248;
+}
+
+.recusar{
+  background-color: #c1ff72;
+  width: 250px;
+  height: 80px;
+  border-radius: 60px;
+  font-size: 20px;
+  color: #2c9248;
+}
+
+.aceitar{
+  background-image: url(../CSS/img/aceitar.png);
+  width: 250px;
+  height: 105px;
+  font-size: 20px;
+  color: #2c9248; 
+}
+
+.botoes{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+}
+
+.question{
+  background-image: url(../CSS/img/question.png);
+  width: 105px;
+  height: 105px;
+  border: none;
+}
+.photo{
+  background-image: url(../CSS/img/photo.png);
+  width: 105px;
+  height: 105px;  
+  border: none;
+}
+
+.sucessgrid{
+  display: grid;
+  gap: 20px;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.sucess{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.resgatar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1ff72;
+  border-radius: 60px;
+  width: 400px;
+  height: 80px;
+  color: #2c9248;
+}
+
+.equipe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+  background-color: #c1ff72;
+  border-radius: 70px;
+  height: 105px;
+  border: none;
+  padding-inline: 20px;
+  margin-right: 100px;
+  color: #2c9248;
 }
 
 /*IMAGENS POSTS*/
@@ -1208,6 +1338,16 @@ a {
   margin-top: 30px;
   gap: 30px;
   font-weight: bolder;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*ESPERANÇA*/
