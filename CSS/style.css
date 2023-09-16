@@ -486,7 +486,11 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-left: 80px;
+ 
+}
+
+.img-noticia {
+  width: 40%;
 }
 
 .textnoticia{
@@ -502,6 +506,12 @@ a {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+}
+
+/*notificacoes*/
+.boxnotificacoes img {
+  margin-bottom: 20px;
+  width: 80%;
 }
 
 .botaoteam{
@@ -805,14 +815,26 @@ a {
   display: flex;
   flex-direction: column;
   grid-gap: 15px;
-  margin-left: 15%;
+  margin-left: 10%;
+}
+.timeline-forum-perfil{
+ background-color: #3DCD58;
+ padding-top: 25px;
+  display: flex;
+  
+  grid-gap: 50px;
 }
 
 .timeline-forum{
   margin-top: 25px;
   display: flex;
-  justify-content: space-between;
+  
   grid-gap: 50px;
+}
+
+.timelime-posts {
+  display: flex;
+  flex-direction: column;
 }
 
 .post{
